@@ -7,6 +7,6 @@
     "4": "2",
     "5": "4"
   },
-  "mark-ii": { "6": "Put answer here", "7": "Put answer here" },
+  "mark-ii": { "6": "POSTGRES_PASSWORD", "7": "Error from server (BadRequest): container \"nginx\" in pod \"nginx\" is waiting to start: trying and failing to pull image" },
   "mark-iii": { "8": "Put answer here", "9": "Put answer here" }
 }
