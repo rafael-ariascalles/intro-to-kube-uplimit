@@ -1,0 +1,2 @@
+run-kube:
+	minikube start
