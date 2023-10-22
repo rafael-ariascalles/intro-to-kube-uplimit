@@ -1,18 +1,19 @@
 # ansible-task: false
+# ansible-docs: false
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: build
 spec:
   params:
-    - name: REPO_URL
-      type: string
+  - name: REPO_URL
+    type: string
   steps:
-    - name: clone
-      image: ubuntu
-      script: |
-        #!/bin/bash
-        git clone $(params.REPO_URL) /workspace/source
-        cd /workspace/source
-        npm install
-        npm test
+  - name: clone
+    image: ubuntu
+    script: |
+      #!/bin/bash
+      git clone $(params.REPO_URL) /workspace/source
+      cd /workspace/source
+      npm install
+      npm test
