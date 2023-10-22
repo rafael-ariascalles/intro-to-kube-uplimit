@@ -15,7 +15,5 @@ spec:
       script: |
         #!/bin/bash
         git clone $(params.REPO_URL) /workspace/source
-        cd /workspace/source
-        npm install
-        cd /workspace/source
-        npm test
+        cd /workspace/source & npm install
+        cd /workspace/source & npm test
